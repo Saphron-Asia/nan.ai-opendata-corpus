@@ -14,15 +14,15 @@ We are also creating datasets derived and annotated based on the corpus data suc
 Alongside our open data initiative, we are also open sourcing a related machine learning service, NAN.ai Natural Language Understanding (NLU). 
 
 ## Navigate this project
-* How this works: <https://github.com/Saphron-Asia/nanai-opendata-corpus/blob/main/HOWTO.md>
+* How this works: <https://github.com/Saphron-Asia/nan.ai-opendata-corpus/blob/main/HOWTO.md>
 * Sample notebooks: <link>
 * Sample data: <link>
-* Contributing guidelines: <https://github.com/Saphron-Asia/nanai-opendata-corpus/blob/main/CONTRIBUTE.md> 
-* Code of conduct: <https://github.com/Saphron-Asia/nanai-opendata-corpus/blob/main/CODEOFCODUCT.md>
+* Contributing guidelines: <https://github.com/Saphron-Asia/nan.ai-opendata-corpus/blob/main/CONTRIBUTE.md> 
+* Code of conduct: <https://github.com/Saphron-Asia/nan.ai-opendata-corpus/blob/main/CODEOFCODUCT.md>
 
 ## Resources
 * Documentation: <link>
-* Issue tracking: <https://github.com/Saphron-Asia/nanai-opendata-corpus/issues>
+* Issue tracking: <https://github.com/Saphron-Asia/nan.ai-opendata-corpus/issues>
 * How to contribute data: <link>
 
 ## License
