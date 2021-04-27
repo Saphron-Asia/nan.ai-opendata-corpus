@@ -21,5 +21,35 @@ We use GitHub Issue Tracking [`here`](https://github.com/Saphron-Asia/nanai-open
   - Finally if you have raw data, open an issue [issue page] and we'll add it for you or add it yourself.
 
 
-## Adding data sources
-``[Insert instructions and/ standards of uploading here]``
+## Adding data sources (AWS S3)
+
+**Note:** The credentials provided here are shared across all data contributors. Hence, the permissions granted to it are limited. The key-pair provided can only access the dedicated open data bucket `saphron-opendata-submissions` and **upload** objects there. Make sure that the data to be uploaded is the correct version/copy because only the **Project Maintainers** are capable of deleting S3 files/ojbects. 
+
+1. Install MinIO client to access S3 (AWS Simple Storage Service) by following the steps listed [here](https://docs.min.io/docs/minio-client-complete-guide).
+2. Set your connection to AWS S3 by running: 
+  ```
+  mc alias set <alias-for-opendata> https://s3.amazonaws.com AKIA6KOZY3ODHZ3MPK5H PQB85WBcrdFPNI3SD6RRPluNT8S0Xgyq+9dBKoCY --api S3v4
+  i.e.
+  mc alias set unicef-opendata https://s3.amazonaws.com AKIA6KOZY3ODHZ3MPK5H PQB85WBcrdFPNI3SD6RRPluNT8S0Xgyq+9dBKoCY --api S3v4
+  ```
+3. Verify that you are connected:
+  ```
+  mc ls <alias-for-opendata>
+  i.e. 
+  mc ls unicef-opendata
+  ```
+  You should see something similar to this: 
+  ```
+  [2021-04-14 14:48:36]    0B raw-data-ocr-chatbot/
+  [2021-04-14 14:48:19]    0B raw-data-ocr/
+  [2021-04-16 11:38:37]    0B saphron-opendata-submissions/
+  ```
+4. Upload your data to the `saphron-opendata-submissions` bucket:
+  ```
+  mc cp <your-file> <alias-for-opendata>/saphron-opendata-submissions
+  ```
+5. Confirm that your file has been uploaded to the S3 bucket successfully:
+  ```
+  mc ls <alias-for-opendata>/saphron-opendata-submissions
+  ```
+  And check if your file is in the returned objects list.
