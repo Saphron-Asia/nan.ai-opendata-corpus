@@ -23,32 +23,30 @@ Python 3.x
 
 ## Pulling data data from sources (AWS S3)
 
-**Note:** The credentials provided here are shared across all data contributors. Hence, the permissions granted to it are limited. The key-pair provided can only access the dedicated open data bucket `saphron-opendata-nlp` and **upload** objects there. Make sure that the data to be uploaded is the correct version/copy because only the **Project Maintainers** are capable of deleting S3 files/ojbects. 
+**Note:** The credentials provided here are shared across all data contributors. Hence, the permissions granted to it are limited. The key-pair provided can only access the dedicated open data bucket `saphron-opendata-nlp` and **pull** objects there. 
 
 1. Install MinIO client to access S3 (AWS Simple Storage Service) by following the steps listed [here](https://docs.min.io/docs/minio-client-complete-guide).
 2. Set your connection to AWS S3 by running: 
   ```
-  mc alias set <alias-for-opendata> https://s3.amazonaws.com AKIA6KOZY3ODHZ3MPK5H PQB85WBcrdFPNI3SD6RRPluNT8S0Xgyq+9dBKoCY --api S3v4
+  mc alias set <alias-for-opendata> https://s3.amazonaws.com AKIA6KOZY3ODLRYTJW6H 5L0Db6cJAeuLZ1CuQ+woYkvxHJ5VH59kYg9x79uz --api S3v4
   i.e.
-  mc alias set unicef-opendata https://s3.amazonaws.com AKIA6KOZY3ODHZ3MPK5H PQB85WBcrdFPNI3SD6RRPluNT8S0Xgyq+9dBKoCY --api S3v4
+  mc alias set unicef-opendata-pull-data https://s3.amazonaws.com AKIA6KOZY3ODLRYTJW6H 5L0Db6cJAeuLZ1CuQ+woYkvxHJ5VH59kYg9x79uz --api S3v4
   ```
 3. Verify that you are connected:
   ```
-  mc ls <alias-for-opendata>
+  mc ls <alias-for-opendata>/<s3-bucket>
   i.e. 
-  mc ls unicef-opendata
+  mc ls unicef-opendata-pull-data/saphron-opendata-nlp
   ```
   You should see something similar to this: 
   ```
-  [2021-04-14 14:48:36]    0B saphron-opendata-nlp/
-  [2021-04-14 14:48:19]    0B saphron-opendata-ocr/
-  [2021-04-16 11:38:37]    0B saphron-opendata-submissions/
+  [2021-04-14 14:48:36]    0B derived/
+  [2021-04-14 14:48:19]    0B eng-fil-corpus/
   ```
 4. Pull our open data resources from `saphron-opendata-nlp` bucket:
   ```
-  mc cp <your-file> <alias-for-opendata>/saphron-opendata-submissions
+  mc cp <alias-for-opendata>/saphron-opendata-nlp/<object-path> <destination-path-local>
+  i.e.
+  mc cp unicef-opendata-pull-data/saphron-opendata-nlp/eng-fil-corpus/test.txt test.txt
   ```
-5. Confirm that your file has been downloaded from the S3 bucket successfully:
-  ```
-  mc ls <alias-for-opendata>/saphron-opendata-submissions
-  ```
+5. Confirm that the file has been copied to your local machine.
