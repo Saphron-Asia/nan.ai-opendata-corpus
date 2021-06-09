@@ -58,7 +58,7 @@ These are datasets
   - As of May 2021: Add more open data to improve bigrams and trigrams list.
   - Derive N-grams (4 or 5) from the datasets as needed.
   
-- Update]
+- Update
   - As of March 2021: Release of initial versions of the derived datasets.
 
 - References
