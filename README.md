@@ -1,6 +1,6 @@
-# NAN.ai English-Filipino Corpus Open Data
+# Nan.ai English-Filipino Corpus Open Data
 
-NAN.ai English-Filipino Corpus is an open source initiative to create an open data repository for Filipino-English corpus intended to train cross-lingual natural language models for chatbots and topic models, among others. This corpus is currently maintained to train NAN.ai support, the chatbot that serves as customer support for NAN.ai users. Supported by UNICEF Innovations, this open source initiative aims to start collaboration on enriching low resource languages, such as Filipino, and jumpstart applications on NLP.
+Nan.ai English-Filipino Corpus is an open source initiative to create an open data repository for Filipino-English corpus intended to train cross-lingual natural language models for chatbots and topic models, among others. This corpus is currently maintained to train Nan.ai support, the chatbot that serves as customer support for Nan.ai users. Supported by UNICEF Innovations, this open source initiative aims to start collaboration on enriching low resource languages, such as Filipino, and jumpstart applications on NLP.
 
 You can participate by (1) contributing language data or (2) annotating existing datasets. We also welcome computing and linguistics experts to improve this repository's usability for various use cases.
 
