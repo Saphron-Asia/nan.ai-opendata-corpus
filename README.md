@@ -24,7 +24,7 @@ Alongside our open data initiative, we are also open sourcing a related machine 
 * Documentation
 * [Issue tracking](https://github.com/Saphron-Asia/nan.ai-opendata-corpus/issues)
 * [Discussion board](https://github.com/Saphron-Asia/nan.ai-opendata-corpus/discussions)
-* [How to contribute data](https://github.com/Saphron-Asia/nan.ai-opendata-corpus/blob/main/CONTRIBUTE.md)
+* [How to contribute data](https://github.com/Saphron-Asia/nan.ai-opendata-corpus/blob/main/CONTRIBUTING.md)
 
 ## License
 nanai-opendata-corpus is licensed under the Creative Commons Zero v1.0 Universal
