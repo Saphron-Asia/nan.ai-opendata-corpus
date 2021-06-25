@@ -17,7 +17,7 @@ Alongside our open data initiative, we are also open sourcing a related machine 
 * [How this works](https://github.com/Saphron-Asia/nan.ai-opendata-corpus/blob/main/HOWTO.md)
 * [Sample notebooks](https://github.com/Saphron-Asia/nan.ai-opendata-corpus/tree/main/sample%20notebooks)
 * [Sample data](https://github.com/Saphron-Asia/nan.ai-opendata-corpus/tree/main/sample%20data)
-* [Contributing guidelines](https://github.com/Saphron-Asia/nan.ai-opendata-corpus/blob/main/CONTRIBUTE.md)
+* [Contributing guidelines](https://github.com/Saphron-Asia/nan.ai-opendata-corpus/blob/main/CONTRIBUTING.md)
 * [Code of conduct](https://github.com/Saphron-Asia/nan.ai-opendata-corpus/blob/main/CODEOFCODUCT.md)
 
 ## Resources
